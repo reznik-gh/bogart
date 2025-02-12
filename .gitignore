@@ -1,2 +1,4 @@
+.gitignore
 cosign.key
+cosign.private
 _build_*
