@@ -19,10 +19,10 @@ set -ouex pipefail
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-#### Example for enabling a System Unit File
 
 echo "--=== Installiere Gnome ===--"
 /ctx/gnome.sh
 echo "--=== Installation abgeschlossen ===--"
 
+#### Example for enabling a System Unit File
 systemctl enable podman.socket
