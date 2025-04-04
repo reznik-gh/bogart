@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -ouex pipefail
+set -oue pipefail
 
 ### Install packages
 
