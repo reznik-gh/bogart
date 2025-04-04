@@ -21,4 +21,8 @@ set -ouex pipefail
 
 #### Example for enabling a System Unit File
 
+echo "--=== Installiere Gnome ===--"
+/ctx/gnome.sh
+echo "--=== Installation abgeschlossen ===--"
+
 systemctl enable podman.socket
