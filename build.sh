@@ -20,9 +20,9 @@ set -oue pipefail
 # dnf5 -y copr disable ublue-os/staging
 
 
-echo "--=== Installiere Gnome ===--"
-/ctx/gnome.sh
-echo "--=== Installation abgeschlossen ===--"
+# echo "--=== Installiere Gnome ===--"
+# /ctx/gnome.sh
+# echo "--=== Installation abgeschlossen ===--"
 
 #### Example for enabling a System Unit File
 systemctl enable podman.socket
