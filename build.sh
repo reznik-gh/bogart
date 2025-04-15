@@ -19,6 +19,8 @@ set -oue pipefail
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
+# echo "--=== Testinstallation ===--"
+/ctx/add-packages.sh
 
 # echo "--=== Installiere Gnome ===--"
 # /ctx/gnome.sh
