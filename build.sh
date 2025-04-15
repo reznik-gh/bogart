@@ -25,4 +25,4 @@ set -oue pipefail
 # echo "--=== Installation abgeschlossen ===--"
 
 #### Example for enabling a System Unit File
-systemctl enable podman.socket
+# systemctl enable podman.socket
