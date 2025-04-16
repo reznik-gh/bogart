@@ -2,8 +2,9 @@
 
 set -oue pipefail
 
-# echo "--=== Testinstallation ===--"
-/ctx/add-packages.sh
+echo "--=== Installing terminal stuff ===--"
+/ctx/modules/terminal-packages.sh
+
 
 #### Example for enabling a System Unit File
 # systemctl enable podman.socket
