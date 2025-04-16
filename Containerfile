@@ -1,7 +1,7 @@
 FROM scratch AS ctx
 COPY / /
 
-FROM quay.io/fedora/fedora-bootc:41
+FROM quay.io/fedora/fedora-bootc:42
 
 RUN --mount=type=bind,from=ctx,src=/,dst=/ctx \
     /ctx/build.sh
