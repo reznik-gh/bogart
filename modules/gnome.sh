@@ -42,5 +42,4 @@ PACKAGES=(
 	glib-networking
 	)
 	
-mkdir -p /ctx/.gnupg/
 dnf5 install -y --setopt=install_weak_deps=False --skip-unavailable "${PACKAGES[@]}"
