@@ -4,7 +4,6 @@ set ${SET_X:+-x} -eou pipefail
 
 # Gnome Packages
 PACKAGES=(
-    gnome-keyring
     dconf
     gdm
     gnome-control-center
@@ -29,7 +28,6 @@ PACKAGES=(
     gvfs-mtp
     gvfs-smb
     nautilus
-    polkit
     ptyxis
     yelp
     NetworkManager-bluetooth
@@ -41,7 +39,6 @@ PACKAGES=(
     NetworkManager-wifi
     NetworkManager-wwan
 	adobe-source-code-pro-fonts
-	avahi
 	glib-networking
 	)
 	
