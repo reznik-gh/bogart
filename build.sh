@@ -2,8 +2,8 @@
 
 set -oue pipefail
 
-echo "--=== Installiere Terminal Zeug ===--"
+echo "--========== Installiere Terminal Zeug ==========--"
 /ctx/modules/terminal-packages.sh
 
-echo "--=== Installiere Gnome ===--"
+echo "--========== Installiere Gnome Desktop ==========--"
 /ctx/modules/gnome.sh

@@ -2,7 +2,7 @@
 
 set ${SET_X:+-x} -eou pipefail
 
-# Gnome Packages
+# Gnome Pakete
 PACKAGES=(
     dconf
     gdm
@@ -42,4 +42,11 @@ PACKAGES=(
 	glib-networking
 	)
 	
+# Zusätzliche Pakete; Nicht zwingend erforderlich, aber machen das Leben schöner
+PACKAGES+=(
+    langpacks-de
+    kde-l10n-de
+    )
+
+# Die eigentliche Installation
 dnf5 install -y --setopt=install_weak_deps=False --skip-unavailable "${PACKAGES[@]}"
