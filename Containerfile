@@ -1,7 +1,10 @@
+ARG BASE_IMAGE="quay.io/fedora/fedora-bootc"
+ARG IMAGE_VERSION="42"
+
 FROM scratch AS ctx
 COPY / /
 
-FROM quay.io/fedora/fedora-bootc:42
+FROM ${BASE_IMAGE}:${IMAGE_VERSION}
 
 RUN --mount=type=bind,from=ctx,src=/,dst=/ctx \
     /ctx/build.sh

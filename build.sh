@@ -2,9 +2,8 @@
 
 set -oue pipefail
 
-echo "--=== Installing terminal stuff ===--"
+echo "--=== Installiere Terminal Zeug ===--"
 /ctx/modules/terminal-packages.sh
 
-
-#### Example for enabling a System Unit File
-# systemctl enable podman.socket
+echo "--=== Installiere Gnome ===--"
+/ctx/modules/gnome.sh
