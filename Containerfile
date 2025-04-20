@@ -1,3 +1,4 @@
+ARG BASE_IMAGE="ghcr.io/ublue-os/silverblue-main"
 ARG BASE_IMAGE="quay.io/fedora/fedora-bootc"
 ARG IMAGE_VERSION="42"
 
